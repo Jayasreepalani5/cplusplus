@@ -1,0 +1,8 @@
+#include<iostream>
+ int main()
+{
+  cout << "\"geeksforgeeks\"";
+   }
+ 
+ errors found were:
+ 1.using namespace std is missing

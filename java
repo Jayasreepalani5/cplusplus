@@ -188,3 +188,43 @@ while(c!='*')
 System.out.println("Lower: "+lower);
 System.out.println("Upper: "+upper);
 System.out.println("Digit: "+digit);
+
+
+
+factorial number using recursion
+
+Scanner input=new Scanner(System.in);
+ int n=input.nextInt();
+ int fact=1;
+ for(int i=1;i<=n;i++)
+ {
+ fact=fact*i;
+ }
+ System.out.println("The factorial of "+n+" is: "+fact);
+
+
+to find the nth largest number in an array
+
+
+Scanner input = new Scanner(System.in);
+int a[] = {14, 67, 48, 23, 5, 62};
+int len = a.length;
+Arrays.sort(a);binary to octal and
+int N = 4;
+System.out.println(N + " Largest number: " + a[len-N]):
+
+
+to find binary to decimal and octal
+
+Scanner input=new Scanner(System.in);
+String bin=input.nextLine();
+int dec=Integer.parseInt(bin,2);
+System.out.println("Decimal: "+dec);
+String oct=Integer.toOctalString(dec);
+System.out.println("Octal: "+oct);
+
+
+
+
+
+

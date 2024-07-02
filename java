@@ -127,3 +127,12 @@ for(int j=2;j<=1000;j++)
  System.out.print(j+" ");
  temp=temp+1;
 
+print multiplication table
+
+int M=4;
+int N=5;
+for(int i=1;i<=N;i++)
+{
+ System.out.println(i+"x"+M+"="+(i*M));
+}
+

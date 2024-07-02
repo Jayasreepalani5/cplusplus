@@ -136,3 +136,55 @@ for(int i=1;i<=N;i++)
  System.out.println(i+"x"+M+"="+(i*M));
 }
 
+write a program that stops after seeing -1 
+
+int i=0,j=0;
+int n=0;
+int s1=0,s2=0;
+int possum=0,negsum=0;
+while(n!=-1)
+{
+ n=input.nextInt();
+ if(n==-1)
+ break;
+ if(n>0)
+ {
+ i++;
+ s1=s1+n;
+ }
+ else
+ {
+ j++;
+ s2=s2+n;
+ }
+}
+System.out.println(i);
+System.out.println(j);
+double pos=(s1/i);
+double neg=s2/j;
+System.out.println("The average of positive: "+pos);
+System.out.println("The average of negative: "+neg);
+
+
+
+read a program till * comes on the way
+
+
+
+Scanner input=new Scanner(System.in);
+System.out.println("Enter * to exit....");
+char c='0';
+int lower=0,upper=0,digit=0;
+while(c!='*')
+{
+ c=input.next().charAt(0);
+ if(c>=65 && c<=90)
+ upper=upper+1;
+ else if(c>=97 && c<=122)
+ lower=lower+1;
+ else if(c>=48 && c<=57)
+ digit=digit+1;
+}
+System.out.println("Lower: "+lower);
+System.out.println("Upper: "+upper);
+System.out.println("Digit: "+digit);

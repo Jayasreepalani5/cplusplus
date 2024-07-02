@@ -254,5 +254,91 @@ for(int i=0;i<n;i++)
 for(int i=0;i<n;i++)
 
 
+Bank rate of interest 
+
+class Bank
+{
+ float getROI()
+ {
+ return 0;
+ }
+}
+class SBI extends Bank
+{
+ float getROI()
+ {
+ return 8.4f;
+ }
+}
+class ICICI extends Bank
+{
+ float getROI()
+ {
+ return 8.4f;
+ }
+}
+class AXIS extends Bank
+{
+ float getROI()
+ {
+ return 8.4f;
+ }
+}
+public class ak {
+ public static void main(String[] args) {
+ Bank b;
+ b = new SBI();
+ System.out.println("SBI, " + b.getROI());
+ }
+}
 
 
+
+sub class 
+
+class abc
+ {
+ abc(int x,int y)
+ {
+ System.out.print(x+","+y);
+ }
+ }
+ public class ak extends abc
+ {
+ ak(int x,int y)
+ {
+ super(x,y);
+ }
+ public static void main(String[] args)
+ {
+ Scanner input=new Scanner(System.in);
+ int a1=input.nextInt();
+ int b1=input.nextInt();
+ ak obj=new ak(a1,b1);
+ }
+ }
+
+
+maximal substring consisting
+
+import java.util.Arrays;
+import java.util.Locale;
+import java.util.Scanner;
+public class ak {
+ public static void main(String[] args)
+ {
+ Scanner input=new Scanner(System.in);
+ String name=input.next();
+ name.split("NULL");
+ name=name.trim();
+ int len=0;
+ for(int i=name.length()-1;i>=0;i--)
+ {
+ if(name.charAt(i)==' ')
+ break;
+ else
+ len++;
+ }
+ System.out.println(len);
+ }
+}

@@ -342,3 +342,117 @@ public class ak {
  System.out.println(len);
  }
 }
+
+
+convert days to years, month and secs
+
+
+Scanner input=new Scanner(System.in);
+int num=input.nextInt();
+int years=num/365;
+System.out.println("years: "+years);
+int weeks=(num%365)/7;
+System.out.println("weeks: "+weeks);
+int days=(num%365)%7;
+System.out.println("Days: "+days);
+
+
+no of college staff and student users
+
+Scanner input=new Scanner(System.in);
+System.out.print("Total Users: ");
+int total_user=input.nextInt();
+System.out.print("Staff Users: ");
+int staff_user=input.nextInt();
+int non_tech=staff_user/3;
+int student_user=total_user-(staff_user+non_tech);
+System.out.println("Student Users: "+student_user);
+
+print the number of factor
+
+Scanner input=new Scanner(System.in);
+int num=input.nextInt();
+int n=input.nextInt();
+int a[]=new int[100];
+int x=0;
+for(int i=1;i<=num;i++)
+{
+ if(num%i==0) {
+ a[x] = i;
+ x++;
+ }
+}
+System.out.println("Number of factors = "+x);
+System.out.println(n+" factor of "+num+" = "+a[n-1]);
+
+print the nth prime number 
+
+
+Scanner input=new Scanner(System.in);
+int n=input.nextInt();
+int a[]=new int[100];
+int x=0;
+for(int i=2;i<=100;i++)
+{
+ int fact=0;
+ for(int j=1;j<=i;j++)
+ {
+ if(i%j==0)
+ fact++;
+ }
+ if(fact==2) {
+ a[x] = i;
+ x++;
+ }
+}
+System.out.println(n+" prime number is "+a[n-1]);
+System.out.print(n+" prime numbers after "+a[n-1]+" are: ");
+for(int i=n;i<n+n;i++)
+{
+ System.out.print(a[i]+" ");
+}
+
+
+Write a Program to create a list of all numbers in a range which are perfect 
+squares and the sum of the digits of the number is less than 10.
+
+
+import java.util.Scanner;
+public class ak {
+ public static void main(String[] args)
+ {
+ Scanner input=new Scanner(System.in);
+ int lower=input.nextInt();
+ int upper=input.nextInt();
+ int i=0,x=1;
+ while(i<upper)
+ {
+ int sum=0;
+ int y=x*x;
+ int t=y;
+ while(y!=0)
+ {
+ int rem=y%10;
+ sum=sum+rem;
+ y=y/10;
+ }
+ if(sum<10)
+ {
+ System.out.print(t+" ");
+ }
+ i=x*x;
+ x++;
+ }
+ }
+}
+
+
+first element as a number and second one as it's square number
+
+Scanner input=new Scanner(System.in);
+int lower=input.nextInt();
+int upper= input.nextInt();
+for(int i=lower;i<=upper;i++)
+{
+ System.out.println("("+i+","+(i*i)+")"+" ");
+}
